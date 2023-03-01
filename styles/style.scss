@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-	width: $container-width;
+	max-width: $container-width;
 	margin: auto;
 }
 
@@ -22,6 +22,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .p-relative {
@@ -29,7 +30,7 @@ body {
 }
 
 .header {
-	height: 85px;
+	padding: 35px 0;
 	background-color: #FDFDFB;
 	z-index: 1;
 	&-logo {
@@ -152,7 +153,7 @@ body {
 		}
 	}
 
-	&::before {
+	&::after {
 		content: "";
 		width: 496px;
 		height: 944.01px;
@@ -399,6 +400,8 @@ body {
 			bottom: -30px;
 			right: 110px;
 
+			max-width: 13px;
+
 			font-family: 'Prata';
 			font-style: normal;
 			font-weight: 400;
@@ -541,3 +544,302 @@ body {
 		}
 	}
 }
+
+@media (max-width: 1680px) {
+	.banner::after {
+		left: 30%;
+	}
+}
+
+@media (max-width: 1170px) {
+	.container {
+		max-width: 900px;
+	}
+
+	.banner {
+		&-text {
+			padding-left: 0;
+			&__title {
+				&::before {
+					display: none;
+				}
+			}
+		}
+
+		&__image {
+			margin-right: 0;
+		}
+
+		&-price {
+			left: 44%;
+			&::after {
+				width: 30px;
+			}
+		}
+
+		&__diameter {
+			&::before {
+				width: 30px;
+				left: -40px;
+			}
+		}
+
+		&::after {
+			top: -15%;
+			left: 25%;
+		}
+	}
+
+	.popular {
+		&-cards {
+			justify-content: center;
+		}
+		&-item {
+			padding: 50px 56px;
+			margin-bottom: 20px;
+			&__name {
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+
+			&__price {
+				margin-bottom: 15px;
+				font-size: 16px;
+				&__image {
+					height: 13px;
+				}
+			}
+
+			&__image {
+				width: 380px;
+				margin-bottom: 45px;
+			}
+
+			&__more {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.catalog {
+		background-size: auto;
+		.d-flex {
+			flex-direction: column;
+		}
+
+		&-slider {
+			margin-bottom: 30px;
+			&__number {
+
+				left: 50%;
+			}
+		}
+
+		&-text {
+			text-align: center;
+
+			&__title {
+				margin-bottom: 15px;
+			}
+
+			&__description {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	.news {
+		&-text {
+			&__description {
+				margin-bottom: 30px;
+			}
+
+			&__icons {
+				margin-bottom: 30px;
+			}
+
+		}
+
+		&-images {
+			margin: auto;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.container {
+		max-width: 768px;
+	}
+	.banner {
+		&-price {
+			display: none;
+		}
+
+		&__diameter {
+			display: none;
+		}
+
+		&::after {
+			top: -15%;
+			left: 13%;
+		}
+		&-text {
+			&__title {
+				margin-bottom: 0;
+				font-size: 32px;
+			}
+
+			&__type {
+				margin-bottom: 10px;
+				font-size: 24px;
+			}
+
+			&__description {
+				max-width: 245px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.d-flex {
+		justify-content: center;
+	}
+
+	.header {
+		.d-flex {
+			justify-content: space-around;
+		}
+		&-nav {
+			display: none;
+
+		}
+	}
+
+
+	.banner {
+		height: auto;
+		&__image {
+			//display: none;
+			width: 50%;
+			height: 50%;
+		}
+		&-text__description {
+			font-size: 16px;
+		}
+		&::after {
+			left: 40%;
+			top: -40%;
+		}
+	}
+
+	.popular {
+		&-cards {
+			&::after {
+				right: auto;
+				top: auto;
+				bottom: -40px;
+			}
+
+		}
+	}
+
+	.news {
+		&-images {
+			flex-direction: column;
+
+			&__column {
+				flex-direction: row;
+				margin-bottom: 5px;
+			}
+
+			&__small {
+				&:first-child {
+					margin-right: 5px;
+				}
+
+			}
+
+			&__big {
+				width: 489px;
+			}
+		}
+	}
+
+	.footer {
+		padding: 30px 0;
+
+		.d-flex {
+			flex-direction: column;
+
+		}
+		&-column {
+
+			&__item {
+				display: none;
+			}
+
+			&__logo {
+				margin-bottom: 5px;
+				img {
+					display: none;
+				}
+			}
+
+			&__title {
+				margin-bottom: 5px;
+
+				font-weight: 700;
+			}
+		}
+	}
+
+}
+
+@media (max-width: 480px) {
+	.container {
+		max-width: 480px;
+	}
+
+	.banner {
+		padding-bottom: 20px;
+		&-text {
+			text-align: center;
+		}
+		&__image {
+			display: none;
+		}
+	}
+
+	.popular {
+		&-title {
+			margin: 30px 0;
+		}
+	}
+
+	.news {
+		&-images {
+			flex-direction: column;
+
+			&__column {
+				//flex-direction: column;
+				margin-bottom: 5px;
+			}
+
+			&__small {
+				width: 116px;
+				&:first-child {
+					margin-right: 5px;
+				}
+
+			}
+
+			&__big {
+				width: 237px;
+			}
+		}
+	}
+
+}
+
