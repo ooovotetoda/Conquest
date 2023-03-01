@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Conquest</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header d-flex">
+        <div class="container d-flex">
+            <div class="header-logo">
+                <img src="./images/header/logo.svg" alt="logo" class="header-logo__img">
+                <span class="header-logo__name">CONQUEST</span>
+            </div>
+
+            <nav class="header-nav d-flex">
+                <div class="header-nav__item">Каталог</div>
+                <div class="header-nav__item">Акции</div>
+                <div class="header-nav__item">Доставка</div>
+                <div class="header-nav__item">Контакты</div>
+            </nav>
+
+            <div class="header-icons d-flex">
+                <div class="header-icons__item">
+                    <img src="./images/header/magnifer.svg" alt="magnifer">
+                </div>
+                <div class="header-icons__item">
+                    <img src="./images/header/like.svg" alt="liked">
+                </div>
+                <div class="header-icons__item">
+                    <img src="./images/header/cart.svg" alt="shopping cart">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="banner">
+            <div class="container d-flex p-relative">
+                <div class="banner-text">
+                    <div class="banner-text__title">Весна/Лето 2019</div>
+                    <div class="banner-text__type">Коллекция</div>
+                    <div class="banner-text__description">Швейцарские часы в наличии в Москве <br>
+                        и с доставкой по всему миру</div>
+                    <button class="banner-text__button">Смотреть каталог</button>
+                </div>
+
+                <div class="banner-price">
+                    <span>22 000</span>
+                    <img src="./images/main/ruble.svg" alt="ruble" class="banner-price__ruble">
+                </div>
+
+                <div class="banner__diameter">28 мм диаметр</div>
+                <img src="./images/main/watch.png" alt="watch" class="banner__image">
+            </div>
+        </section>
+
+        <section class="popular">
+            <div class="container">
+                <div class="popular-title">Популярные модели</div>
+
+                <div class="popular-cards d-flex">
+                    <div class="popular-item">
+                        <div class="popular-item__name">RADO</div>
+                        <div class="popular-item__price">
+                            <span class="popular-item__price__number">65 300</span>
+                            <img src="./images/main/ruble.svg" alt="ruble" class="popular-item__price__image">
+                        </div>
+                        <img src="./images/main/watch_1.png" alt="watch" class="popular-item__image">
+                        <div class="popular-item__more">Подробнее</div>
+                    </div>
+
+                    <div class="popular-item">
+                        <div class="popular-item__name">BVLGARI</div>
+                        <div class="popular-item__price">
+                            <span class="popular-item__price__number">81 700</span>
+                            <img src="./images/main/ruble.svg" alt="ruble" class="popular-item__price__image">
+                        </div>
+                        <img src="./images/main/watch_2.png" alt="watch" class="popular-item__image">
+                        <div class="popular-item__more">Подробнее</div>
+                    </div>
+
+                    <div class="popular-item">
+                        <div class="popular-item__name">BVLGARI</div>
+                        <div class="popular-item__price">
+                            <span class="popular-item__price__number">72 700</span>
+                            <img src="./images/main/ruble.svg" alt="ruble" class="popular-item__price__image">
+                        </div>
+                        <img src="./images/main/watch_3.png" alt="watch" class="popular-item__image">
+                        <div class="popular-item__more">Подробнее</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container d-flex">
+                <div class="catalog-slider">
+                    <img src="./images/main/slider_photo.jpg" alt="slider photo" class="catalog-slider__image">
+                    <div class="catalog-slider__number">01</div>
+                </div>
+                <dziv class="catalog-text">
+                    <div class="catalog-text__title">Подлинное качество</div>
+                    <div class="catalog-text__description">
+                        Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.
+                    </div>
+                    <button class="catalog-text__button">СМОТРЕТЬ КАТАЛОГ</button>
+                </dziv>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="container d-flex">
+                <div class="news-text">
+                    <div class="news-text__title">Следите за нашими новостями</div>
+                    <div class="news-text__description">Подписывайтесь на @conquest_watch в соцсетях и узнавайте о новинках и акциях первыми.</div>
+                    <div class="news-text__icons">
+                        <img src="./images/main/instagram_icon.svg" alt="instagram" class="news-text__icon">
+                        <img src="./images/main/facebook_icon.svg" alt="facebook" class="news-text__icon">
+                        <img src="./images/main/twitter_icon.svg" alt="twitter" class="news-text__icon">
+                    </div>
+                </div>
+                <div class="news-images">
+                    <div class="news-images__column">
+                        <img src="./images/main/news_1.jpg" alt="photo" class="news-images__small">
+                        <img src="./images/main/news_2.jpg" alt="photo" class="news-images__small">
+                    </div>
+                    <img src="./images/main/news_3.jpg" alt="photo" class="news-images__big">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container d-flex">
+            <div class="footer-column">
+                <div class="footer-column__logo d-flex">
+                    <img src="./images/footer/logo.svg" alt="logo">
+                    <span>CONQUEST</span>
+                </div>
+                <a class="footer-column__item">8 (499) 450-47-97</a>
+                <a class="footer-column__item">info@conquest.watch.ru</a>
+            </div>
+            <div class="footer-column">
+                <div class="footer-column__title">о компании</div>
+                <a class="footer-column__item">Наши магазины</a>
+                <a class="footer-column__item">Вакансии</a>
+                <a class="footer-column__item">Сертификаты</a>
+                <a class="footer-column__item">Отзывы</a>
+            </div>
+            <div class="footer-column">
+                <div class="footer-column__title">покупателям</div>
+                <a class="footer-column__item">Каталог товаров</a>
+                <a class="footer-column__item">Как заказать?</a>
+                <a class="footer-column__item">FAQ</a>
+                <a class="footer-column__item">Корпоративным клиентам</a>
+            </div>
+            <div class="footer-column">
+                <div class="footer-column__title">оплата и доставка</div>
+                <a class="footer-column__item">Способы оплаты</a>
+                <a class="footer-column__item">Время доставки</a>
+                <a class="footer-column__item">Гарантии и ремонт</a>
+                <a class="footer-column__item">Возврат и компенсация</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
